@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'reservations',
+    'authentication',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -80,6 +81,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 #     }
 # }
 
+#My local mysql database configuration
 DATABASES = {
  'default': {
   'ENGINE': 'django.db.backends.mysql',
